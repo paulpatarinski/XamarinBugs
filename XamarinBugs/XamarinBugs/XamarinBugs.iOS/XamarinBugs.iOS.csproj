@@ -11,7 +11,7 @@
     <RootNamespace>XamarinBugs.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>XamarinBugsiOS</AssemblyName>
-    <NuGetPackageImportStamp>95ce66fa</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>8d190ff3</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,6 +96,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinBugs\XamarinBugs.csproj">
