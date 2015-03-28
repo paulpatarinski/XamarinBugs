@@ -19,12 +19,24 @@
         </Style.Triggers>
       </Style>
 
+       <Style TargetType="Picker">
+<!--       NO WAY TO SET TEXT COLOR-->
+        <Setter Property="BackgroundColor" Value="Green" />
+        <Style.Triggers>
+          <Trigger TargetType="Picker" Property="IsEnabled" Value="False">
+            <Setter Property="BackgroundColor" Value="Purple" />
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+
+
      <Style TargetType="Button">
         <Setter Property="TextColor" Value="Yellow" />
         <Setter Property="BackgroundColor" Value="Green" />
       
         <Style.Triggers>
           <Trigger TargetType="Button" Property="IsEnabled" Value="False">
+<!--          TEXT COLOR DOES NOT UPDATE ON iOS-->
             <Setter Property="TextColor" Value="Gray" />
             <Setter Property="BackgroundColor" Value="Purple" />
           </Trigger>

@@ -18,6 +18,7 @@ namespace XamarinBugs.Pages
       {
 				sampleEntry.IsEnabled = !sampleEntry.IsEnabled;
 				sampleButton.IsEnabled = !sampleButton.IsEnabled;
+				samplePicker.IsEnabled = !samplePicker.IsEnabled;
       };
     }
   }

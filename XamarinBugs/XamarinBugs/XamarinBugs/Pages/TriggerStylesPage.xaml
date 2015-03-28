@@ -5,6 +5,7 @@
   
   <StackLayout VerticalOptions="Center">
     <Entry x:Name="sampleEntry" Text="Sample Text"/>
+    <Picker x:Name="samplePicker" />
     <Button x:Name="sampleButton" Text="Sample Text"/>
 
 

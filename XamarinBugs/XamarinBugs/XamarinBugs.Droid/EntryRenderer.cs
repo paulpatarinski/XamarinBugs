@@ -4,11 +4,11 @@ using Paylocity.Client.Android.Renderers;
 using Xamarin.Forms.Platform.Android;
 using System.ComponentModel;
 
-[assembly: ExportRenderer (typeof(Entry), typeof(PaylocityEntryRenderer))]
+[assembly: ExportRenderer (typeof(Entry), typeof(CustomEntryRenderer))]
 
 namespace Paylocity.Client.Android.Renderers
 {
-	public class PaylocityEntryRenderer : EntryRenderer
+	public class CustomEntryRenderer : EntryRenderer
 	{
 		public Entry FormsControl
 		{
