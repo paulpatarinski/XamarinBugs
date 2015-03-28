@@ -8,14 +8,14 @@
     <ResourceDictionary>
 
       <Style TargetType="Entry">
+        <Setter Property="TextColor" Value="Yellow" />
+        <Setter Property="BackgroundColor" Value="Green" />
+      
         <Style.Triggers>
           <Trigger TargetType="Entry" Property="IsEnabled" Value="False">
-            <Setter Property="BackgroundColor" Value="Gray" />
+            <Setter Property="TextColor" Value="Gray" />
+            <Setter Property="BackgroundColor" Value="Purple" />
           </Trigger>
-          <Trigger TargetType="Entry" Property="IsEnabled" Value="True">
-            <Setter Property="BackgroundColor" Value="Yellow" />
-          </Trigger>
-
         </Style.Triggers>
       </Style>
     </ResourceDictionary>
