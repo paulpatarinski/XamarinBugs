@@ -6,6 +6,8 @@
   <StackLayout VerticalOptions="Center">
     <Entry x:Name="sampleEntry" Text="Sample Text"/>
     <Picker x:Name="samplePicker" />
+    <DatePicker x:Name="sampleDatePicker" />
+    <TimePicker x:Name="sampleTimePicker" />
     <Button x:Name="sampleButton" Text="Sample Text"/>
 
 

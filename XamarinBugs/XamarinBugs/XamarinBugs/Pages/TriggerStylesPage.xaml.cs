@@ -19,6 +19,8 @@ namespace XamarinBugs.Pages
 				sampleEntry.IsEnabled = !sampleEntry.IsEnabled;
 				sampleButton.IsEnabled = !sampleButton.IsEnabled;
 				samplePicker.IsEnabled = !samplePicker.IsEnabled;
+				sampleDatePicker.IsEnabled = !sampleDatePicker.IsEnabled;
+				sampleTimePicker.IsEnabled = !sampleTimePicker.IsEnabled;
       };
     }
   }

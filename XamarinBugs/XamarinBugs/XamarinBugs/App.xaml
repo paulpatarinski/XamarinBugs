@@ -29,6 +29,25 @@
         </Style.Triggers>
       </Style>
 
+        <Style TargetType="DatePicker">
+<!--       NO WAY TO SET TEXT COLOR-->
+        <Setter Property="BackgroundColor" Value="Green" />
+        <Style.Triggers>
+          <Trigger TargetType="DatePicker" Property="IsEnabled" Value="False">
+            <Setter Property="BackgroundColor" Value="Purple" />
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+       <Style TargetType="TimePicker">
+<!--       NO WAY TO SET TEXT COLOR-->
+        <Setter Property="BackgroundColor" Value="Green" />
+        <Style.Triggers>
+          <Trigger TargetType="TimePicker" Property="IsEnabled" Value="False">
+            <Setter Property="BackgroundColor" Value="Purple" />
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+
 
      <Style TargetType="Button">
         <Setter Property="TextColor" Value="Yellow" />
