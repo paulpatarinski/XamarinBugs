@@ -13,6 +13,11 @@ namespace XamarinBugs.Pages
     public TriggerStylesPage()
     {
       InitializeComponent();
+
+      toggleBtn.Clicked += (sender, args) =>
+      {
+        sampleEntry.IsEnabled = !sampleEntry.IsEnabled;
+      };
     }
   }
 }

@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using XamarinBugs.Pages;
 
 namespace XamarinBugs
 {
-  public class App : Application
+  public partial class App : Application
   {
     public App()
     {
-      // The root page of your application
-      MainPage = new NavigationPage( new LandingPage());
+      InitializeComponent();
+      MainPage = new NavigationPage(new LandingPage());
+
     }
 
     protected override void OnStart()
