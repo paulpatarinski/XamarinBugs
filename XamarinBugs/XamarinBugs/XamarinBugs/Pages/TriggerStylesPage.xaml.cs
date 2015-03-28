@@ -14,6 +14,12 @@ namespace XamarinBugs.Pages
     {
       InitializeComponent();
 
+		samplePicker.Items.Add ("2013");
+		samplePicker.Items.Add ("2014");
+		samplePicker.Items.Add ("2015");
+
+		samplePicker.SelectedIndex = 0;
+
       toggleBtn.Clicked += (sender, args) =>
       {
 				sampleEntry.IsEnabled = !sampleEntry.IsEnabled;
