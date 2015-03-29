@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinBugs;assembly=XamarinBugs"
              x:Class="XamarinBugs.App">
   
   <Application.Resources>
@@ -13,7 +14,7 @@
       
         <Style.Triggers>
           <Trigger TargetType="Entry" Property="IsEnabled" Value="False">
-            <Setter Property="TextColor" Value="Gray" />
+            <Setter Property="TextColor" Value="Red" />
             <Setter Property="BackgroundColor" Value="Purple" />
           </Trigger>
         </Style.Triggers>
@@ -24,6 +25,17 @@
         <Setter Property="BackgroundColor" Value="Green" />
         <Style.Triggers>
           <Trigger TargetType="Picker" Property="IsEnabled" Value="False">
+            <Setter Property="BackgroundColor" Value="Purple" />
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+
+        <Style TargetType="local:CustomPicker">
+        <Setter Property="TextColor" Value="Yellow" />
+        <Setter Property="BackgroundColor" Value="Green" />
+        <Style.Triggers>
+          <Trigger TargetType="local:CustomPicker" Property="IsEnabled" Value="False">
+            <Setter Property="TextColor" Value="Red" />
             <Setter Property="BackgroundColor" Value="Purple" />
           </Trigger>
         </Style.Triggers>
@@ -56,7 +68,7 @@
         <Style.Triggers>
           <Trigger TargetType="Button" Property="IsEnabled" Value="False">
 <!--          TEXT COLOR DOES NOT UPDATE ON iOS-->
-            <Setter Property="TextColor" Value="Gray" />
+            <Setter Property="TextColor" Value="Red" />
             <Setter Property="BackgroundColor" Value="Purple" />
           </Trigger>
         </Style.Triggers>

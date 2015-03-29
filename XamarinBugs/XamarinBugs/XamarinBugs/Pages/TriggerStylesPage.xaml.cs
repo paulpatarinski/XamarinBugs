@@ -20,11 +20,19 @@ namespace XamarinBugs.Pages
 
 		samplePicker.SelectedIndex = 0;
 
+
+		sampleCustomPicker.Items.Add ("2013");
+		sampleCustomPicker.Items.Add ("2014");
+		sampleCustomPicker.Items.Add ("2015");
+
+		sampleCustomPicker.SelectedIndex = 0;
+
       toggleBtn.Clicked += (sender, args) =>
       {
 				sampleEntry.IsEnabled = !sampleEntry.IsEnabled;
 				sampleButton.IsEnabled = !sampleButton.IsEnabled;
 				samplePicker.IsEnabled = !samplePicker.IsEnabled;
+				sampleCustomPicker.IsEnabled = !sampleCustomPicker.IsEnabled;
 				sampleDatePicker.IsEnabled = !sampleDatePicker.IsEnabled;
 				sampleTimePicker.IsEnabled = !sampleTimePicker.IsEnabled;
       };
