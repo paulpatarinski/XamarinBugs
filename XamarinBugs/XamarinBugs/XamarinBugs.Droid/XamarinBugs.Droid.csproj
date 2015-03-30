@@ -97,6 +97,7 @@
   <ItemGroup>
     <ProjectReference Include="..\XamarinBugs\XamarinBugs.csproj">
       <Name>XamarinBugs</Name>
+      <Project>{8DA6B977-6686-4BE3-80EF-9CFC1D5A2BE8}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
