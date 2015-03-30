@@ -6,6 +6,7 @@
   
   <StackLayout VerticalOptions="Center">
     <Entry x:Name="sampleEntry" Text="Sample Text"/>
+    <Entry x:Name="sampleDisabledEntry" Text="Sample Text" IsEnabled="false"/>
     <Picker x:Name="samplePicker" />
     <local:CustomPicker x:Name="sampleCustomPicker" />
     <DatePicker x:Name="sampleDatePicker" />

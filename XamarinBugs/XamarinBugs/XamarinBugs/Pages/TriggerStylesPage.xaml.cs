@@ -30,6 +30,7 @@ namespace XamarinBugs.Pages
       toggleBtn.Clicked += (sender, args) =>
       {
 				sampleEntry.IsEnabled = !sampleEntry.IsEnabled;
+				sampleDisabledEntry.IsEnabled = !sampleDisabledEntry.IsEnabled;
 				sampleButton.IsEnabled = !sampleButton.IsEnabled;
 				samplePicker.IsEnabled = !samplePicker.IsEnabled;
 				sampleCustomPicker.IsEnabled = !sampleCustomPicker.IsEnabled;
