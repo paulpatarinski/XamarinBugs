@@ -95,12 +95,13 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
-    <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinBugs\XamarinBugs.csproj">
       <Name>XamarinBugs</Name>
+      <Project>{8DA6B977-6686-4BE3-80EF-9CFC1D5A2BE8}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
