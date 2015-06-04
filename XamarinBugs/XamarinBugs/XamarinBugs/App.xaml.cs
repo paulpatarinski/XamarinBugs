@@ -15,9 +15,14 @@ namespace XamarinBugs
     {
       InitializeComponent();
 
+
+      //PROPERLY HIDES
+      //MainPage = new NavigationPage(new NoNavBarPage());
+    
+      ////DOES NOT HIDE
       MainPage = new MasterDetailPage
       {
-        Master = new ContentPage{Title = "Master"},
+        Master = new ContentPage { Title = "Master" },
         Detail = new NavigationPage(new NoNavBarPage())
       };
 
