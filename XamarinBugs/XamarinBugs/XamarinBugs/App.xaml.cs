@@ -14,7 +14,12 @@ namespace XamarinBugs
     public App()
     {
       InitializeComponent();
-      MainPage = new NavigationPage(new LandingPage());
+
+      MainPage = new MasterDetailPage
+      {
+        Master = new ContentPage{Title = "Master"},
+        Detail = new NavigationPage(new NoNavBarPage())
+      };
 
     }
 
