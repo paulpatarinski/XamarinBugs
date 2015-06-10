@@ -23,7 +23,8 @@ namespace XamarinBugs.ViewModels
       {
         return new List<string>
         {
-          PageTitle.TriggerStyles
+					PageTitle.TriggerStyles,
+          PageTitle.KeyboardOverlap
         };
       }
     }
@@ -44,6 +45,11 @@ namespace XamarinBugs.ViewModels
                 _navigation.PushAsync(new TriggerStylesPage());
               break;
             }
+				case PageTitle.KeyboardOverlap:
+					{
+						_navigation.PushAsync(new KeyboardOverlap());
+						break;
+					}
 
           default:
             {

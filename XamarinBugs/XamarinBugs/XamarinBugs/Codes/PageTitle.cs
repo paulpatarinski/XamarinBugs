@@ -8,6 +8,7 @@ namespace XamarinBugs.Codes
 {
   public struct PageTitle
   {
-    public const string TriggerStyles = "TriggerStyles";
+		public const string TriggerStyles = "TriggerStyles";
+    public const string KeyboardOverlap = "Keyboard Overlap";
   }
 }
