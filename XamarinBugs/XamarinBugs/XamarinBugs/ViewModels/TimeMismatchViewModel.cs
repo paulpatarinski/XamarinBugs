@@ -13,14 +13,14 @@ namespace XamarinBugs.ViewModels
 		public TimeMismatchViewModel ()
 		{
 			_timeService = new TimeService ();
-			LoadTimeFromServer ();
+			LoadTimeFromServerAsync ();
 		}
 
 		readonly TimeService _timeService;
 
-		private DateTime _utcFromServer;
+		private string _utcFromServer;
 
-		public DateTime UTCFromServer{ 
+		public string UTCFromServer{ 
 			get{ return _utcFromServer;
 			} set{
 				_utcFromServer = value;
@@ -29,16 +29,19 @@ namespace XamarinBugs.ViewModels
 		}
 			
 
-		public DateTime UTCFromClient{
+		public string UTCFromClient{
 			get{
-				return DateTime.UtcNow;
+				return DateTime.UtcNow.ToString ();
 			}
 		}
 
-		private async Task LoadTimeFromServer()
+		private async Task LoadTimeFromServerAsync()
 		{
+			UTCFromServer = "Loading Time from TimezoneDB...";
+
 			var time = await _timeService.GetTimeAsync ();
-			UTCFromServer = time;
+
+			UTCFromServer = time.ToString ();
 		}
 
 		#region INotifyPropertyChanged implementation
