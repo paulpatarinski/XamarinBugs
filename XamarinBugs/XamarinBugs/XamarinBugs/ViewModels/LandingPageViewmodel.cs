@@ -24,7 +24,8 @@ namespace XamarinBugs.ViewModels
         return new List<string>
         {
 					PageTitle.TriggerStyles,
-          PageTitle.KeyboardOverlap
+          PageTitle.KeyboardOverlap,
+					PageTitle.TimeMismatch
         };
       }
     }
@@ -48,6 +49,11 @@ namespace XamarinBugs.ViewModels
 				case PageTitle.KeyboardOverlap:
 					{
 						_navigation.PushAsync(new KeyboardOverlap());
+						break;
+					}
+				case PageTitle.TimeMismatch:
+					{
+						_navigation.PushAsync(new TimeMismatch());
 						break;
 					}
 
