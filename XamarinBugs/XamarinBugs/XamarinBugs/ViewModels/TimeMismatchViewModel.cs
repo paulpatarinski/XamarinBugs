@@ -35,6 +35,12 @@ namespace XamarinBugs.ViewModels
 			}
 		}
 
+		public string UTCUniversalFromClient{
+			get{
+				return DateTime.Now.ToUniversalTime ().ToString ();
+			}
+		}
+
 		private async Task LoadTimeFromServerAsync()
 		{
 			UTCFromServer = "Loading Time from TimezoneDB...";
